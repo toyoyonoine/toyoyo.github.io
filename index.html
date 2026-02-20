@@ -1,43 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>toyoyo | Portfolio</title>
+  <meta name="description" content="Portfolio of toyoyo — Web / Python / Music Tech projects." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>YOUR NAME</h1>
-    <p>Aspiring Engineer</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">toyoyo</a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About</h2>
-    <p>
-      ゲームエンジニア志望。音楽制作も行っています。
-      現在Web開発とPythonを学習中。
-    </p>
-  </section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Portfolio</p>
+        <h1 class="hero-title">Building practical tools with clean UX.</h1>
+        <p class="hero-subtitle">
+          音楽制作。Web開発とPython等で、実用的なツールを作っています。
+        </p>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML / CSS</li>
-      <li>JavaScript (Learning)</li>
-      <li>Python (Learning)</li>
-      <li>Git / GitHub</li>
-    </ul>
-  </section>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <p>現在制作中...</p>
-  </section>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>興味領域：音楽 / データ活用 / ツール開発</p>
+        </div>
 
-  <footer>
-    <p>© 2026 YOUR NAME</p>
+        <div class="card">
+          <p>
+            Web開発とPythonで、配信データや収益を扱う分析ツールの制作に取り組んでいます。
+            音楽制作も行っています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>制作で使っている技術</p>
+        </div>
+
+        <div class="chips">
+          <span class="chip">HTML / CSS</span>
+          <span class="chip">JavaScript (Learning)</span>
+          <span class="chip">Python (Learning)</span>
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">Streamlit</span>
+          <span class="chip">pandas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>過去のプロダクト</p>
+        </div>
+
+        <div class="grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="badge">Streamlit</span>
+              <span class="badge ghost">Data Tool</span>
+            </div>
+
+            <h3>Music Revenue Simulator</h3>
+
+            <div class="project-image">
+              <img src="assets/music-analyzer3.png" alt="Music Revenue Simulator screenshot">
+            </div>
+
+            <p class="muted">
+              Spotify / YouTubeの再生数から収益を推定し、複利・線形の成長モデル比較、目標逆算、到達月・必要成長率を提示。
+            </p>
+
+            <ul class="list">
+              <li>複利 vs 線形成長の達成スピード比較</li>
+              <li>目標月収 → 必要再生数の逆算</li>
+              <li>到達月 / 必要成長率（目安）</li>
+              <li>予測データCSVダウンロード</li>
+            </ul>
+
+            <div class="stack">
+              <span>Python</span><span>Streamlit</span><span>pandas</span><span>matplotlib</span>
+            </div>
+
+            <div class="actions">
+              <a class="btn primary"
+                href="https://https://toyoyo-music-analyzer.streamlit.app"
+                target="_blank" rel="noopener">
+                Live Demo
+              </a>
+              
+              <a class="btn"
+                href="https://github.com/toyoyonoine/music-analyzer"
+                target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+
+            
+          </article>
+
+          <!-- 2つ目の枠（次の作品用） -->
+          <article class="project-card placeholder">
+            <div class="project-top">
+              <span class="badge ghost">Next</span>
+            </div>
+            <h3>Next Project</h3>
+            <p class="muted">
+              次の制作：データ分析 / 自動化 / 音楽系ツールのいずれかを追加予定。
+            </p>
+            <div class="actions">
+              <a class="btn" href="#contact">Request a tool</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>案件相談・制作依頼・質問など</p>
+        </div>
+
+        <div class="card">
+          <p class="muted">
+            お仕事のご相談・共同制作などお気軽にご連絡ください。
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="mailto:tyoyonoine123456@gmail.com">Email</a>
+            <a class="btn" href="https://github.com/toyoyonoine" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 toyoyo — Built with HTML / CSS</p>
+      <a href="#top" class="to-top">Back to top</a>
+    </div>
   </footer>
 
 </body>
