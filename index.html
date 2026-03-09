@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <meta name="description" content="Portfolio of toyoyo — Web / Python / Music Tech projects." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <header class="site-header">
@@ -109,33 +111,53 @@
             </div>
 
             <div class="actions">
-              <a class="btn primary"
-                href="https://toyoyo-music-analyzer.streamlit.app"
-                target="_blank" rel="noopener">
+              <a class="btn primary" href="https://toyoyo-music-analyzer.streamlit.app" target="_blank" rel="noopener">
                 Live Demo
               </a>
-              
-              <a class="btn"
-                href="https://github.com/toyoyonoine/music-analyzer"
-                target="_blank" rel="noopener">
+
+              <a class="btn" href="https://github.com/toyoyonoine/music-analyzer" target="_blank" rel="noopener">
                 GitHub
               </a>
             </div>
-
-            
           </article>
 
-          <!-- 2つ目の枠（次の作品用） -->
-          <article class="project-card placeholder">
+          <!-- 2つ目の枠（Slate） -->
+          <article class="project-card">
             <div class="project-top">
-              <span class="badge ghost">Next</span>
+              <span class="badge">Next.js</span>
+              <span class="badge ghost">SaaS / Tool</span>
             </div>
-            <h3>Next Project</h3>
+
+            <h3>Slate</h3>
+
+            <div class="project-image">
+              <img src="assets/slate-screenshot.png" alt="Slate screenshot">
+            </div>
+
             <p class="muted">
-              次の制作：データ分析 / 自動化 / 音楽系ツールのいずれかを追加予定。
+              フリーランサーや個人事業主向けのAI搭載型の請求書管理・PDF作成ツール。<br>
+              顧客管理、多言語対応、ダッシュボード機能などをNext.jsとSupabaseで構築。
             </p>
+
+            <ul class="list">
+              <li>直感的なUIでの請求書・見積書作成</li>
+              <li>PDF即時エクスポート機能</li>
+              <li>Stripe連携による支払いリンク生成</li>
+              <li>日/英のグローバル対応 (next-intl)</li>
+            </ul>
+
+            <div class="stack">
+              <span>Next.js</span><span>Supabase</span><span>Stripe</span><span>Tailwind CSS</span>
+            </div>
+
             <div class="actions">
-              <a class="btn" href="#contact">Request a tool</a>
+              <a class="btn primary" href="https://www.slatefluxa.com" target="_blank" rel="noopener">
+                Live Demo
+              </a>
+
+              <a class="btn" href="https://github.com/toyoyonoine/slate" target="_blank" rel="noopener">
+                GitHub
+              </a>
             </div>
           </article>
 
@@ -172,4 +194,5 @@
   </footer>
 
 </body>
+
 </html>
